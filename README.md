@@ -20,7 +20,6 @@ You can use the srcset in your markdown files for Kirby as follows:
 (srcset: filename extension: png sizes: media queries and widths class: my-classname caption: a figcaption alt: alt text width: 100px height: 200px)
 ```
 
-
 Be careful, you need to write the filename without an extension. The extension is written as a separate attribute. When you do not use the extension attribute, the extension will be ‘jpg’.
 
 ### File names
@@ -39,6 +38,6 @@ The naming convention is based on naming convention for Apple's iOS. If you want
 
 ### Widths
 
-The tag will automatically get the widths of your files and place it in the srcset.
+The tag will automatically get the widths of your images and places these in the srcset.
 
-There is a know problem for 'sizes'. An example for sizes would be '(min-width: 1024px) 50vw, 100vw'. The problem for this is that currently Kirby doesn't support an escape character within KirbyText tags for a parenthesis. Until Kirby adds this, you cannot use 'sizes'. The default for sizes is '100vw'.
+The attribute 'sizes' doesn't work yet. An example for sizes would be '(min-width: 1024px) 50vw, 100vw'. The problem is that Kirby doesn't support an escape character within KirbyText tags for a parenthesis, which are also used to end the KirbyText tag. Until an escape character (for example '\') is added to Kirby, you cannot use 'sizes'. The current default for sizes is '100vw'.
