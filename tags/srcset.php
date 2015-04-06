@@ -1,5 +1,24 @@
 <?php
 
+/**
+ * Srcset Tag
+ *
+ * An extension for KirbyText making the srcset available as a tag. See
+ * http://responsiveimages.org/ for more information about srcset.
+ *
+ * You can use the KirbyText tag in your text as: (srcset: filename extension:
+ * png sizes: media queries and widths class: my-classname caption: a figcaption
+ * alt: alt text width: 100px height: 200px). The attribute 'sizes' doesn't work
+ * yet.
+ * @author    Bart van de Biezen <bart@bartvandebiezen.com>
+ * @link      https://github.com/bartvandebiezen/kirby-v2-srcset-tag
+ * @return    HTML
+ * @version   0.3
+ * @todo      Add support for escape character in 'sizes' attribute.
+ * @todo      Add the option to generate images when they do not exist.
+ * @todo      Add BEM style classes based on class attribute.
+ */
+
 kirbytext::$tags['srcset'] = array (
 
 	'attr' => array (
